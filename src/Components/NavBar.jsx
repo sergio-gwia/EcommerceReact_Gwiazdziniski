@@ -9,7 +9,7 @@ function NavBar() {
         <div className='text-white'>Envio Gratis a partir de los $9500</div>
     </div>
 
-    <nav className="navbar bg-body-tertiary">
+    <nav className="navbar bg-body-tertiary bg-light-subtle">
         <div className="container-fluid d-flex justify-content-evenly">
             <a className="navbar-brand" href="#">FVSport</a>
 
@@ -17,16 +17,16 @@ function NavBar() {
 
                 <ul className="navbar-nav d-flex flex-row gap-4">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Home</a>
+                        <a className="nav-link fw-bolder" href="#">Home</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Features</a>
+                        <a className="nav-link fw-bolder" href="#">Camisetas</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Pricing</a>
+                        <a className="nav-link fw-bolder" href="#">Shorts</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href='#'>Disabled</a>
+                        <a className="nav-link fw-bolder" href='#'>Botines</a>
                     </li>
                 </ul>
 
