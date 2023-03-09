@@ -1,38 +1,45 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import CartWidget from './CartWidget'
+import img from '../assets/img/logo_fvsport.svg'
 
 function NavBar() {
   return (
     <>
-
-    <div className='barra d-flex justify-content-center align-items-center'>
-        <div className='text-white'>Envio Gratis a partir de los $9500</div>
-    </div>
-
+    <div className='barra'>PAGO EN LINEA↓</div>
+    
     <nav className="navbar bg-body-tertiary bg-light-subtle">
         <div className="container-fluid d-flex justify-content-evenly">
-            <a className="navbar-brand" href="#">FVSport</a>
-
+            <Link to={"/"}>
+            <img src={img} alt="" className='logo-img'/>
+            </Link>
+            
             <div>
 
                 <ul className="navbar-nav d-flex flex-row gap-4">
                     <li className="nav-item">
-                        <a className="nav-link fw-bolder" href="#">Home</a>
+                        <Link to={`/category/${"Camisetas"}`}>
+                        <p>Camisetas</p>
+                        </Link>   
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link fw-bolder" href="#">Camisetas</a>
+                        <Link to={`/category/${"Shorts"}`}>
+                        <p>Shorts</p>
+                        </Link>   
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link fw-bolder" href="#">Shorts</a>
+                        <Link to={`/category/${"botines"}`}>
+                        <p>Botines</p>
+                        </Link>   
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link fw-bolder" href='#'>Botines</a>
-                    </li>
+           
                 </ul>
 
             </div>
-
-            <CartWidget/> 
+            <Link to={"/Cart"}>
+                <CartWidget/> 
+            </Link>
+            
         </div>   
     </nav>
 
